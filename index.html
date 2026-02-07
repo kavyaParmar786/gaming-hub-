@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">🎮 GamingHub</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="request.html">Request</a></li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Gaming Resource Hub</h1>
+  <p>Manifests • Fixes • Tools • Free Games</p>
+</header>
+
+<input type="text" id="search" placeholder="Search resources..." onkeyup="searchItems()">
+
+<section class="cards" id="resources">
+  <div class="card">
+    <h3>📜 Manifests</h3>
+    <p>Open-source & config manifests</p>
+    <button class="btn">Open</button>
+  </div>
+
+  <div class="card">
+    <h3>🛠 Fixes & Tweaks</h3>
+    <p>Performance & crash fixes</p>
+    <button class="btn">View</button>
+  </div>
+
+  <div class="card">
+    <h3>🎮 Free Games</h3>
+    <p>Legal & free-to-play titles</p>
+    <button class="btn">Browse</button>
+  </div>
+</section>
+
+<section class="manifest-box">
+<pre id="manifest" class="code">
+fx_version 'cerulean'
+game 'gta5'
+author 'YourName'
+version '1.0.0'
+</pre>
+<button class="btn" onclick="copyManifest()">📋 Copy Manifest</button>
+</section>
+
+<section id="disclaimer" class="disclaimer">
+⚠ This site shares only legal, educational & free resources.  
+No pirated or DRM-bypassed content is hosted.
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
